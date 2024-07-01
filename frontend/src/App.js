@@ -9,6 +9,9 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       </Router>
     </div>
   );

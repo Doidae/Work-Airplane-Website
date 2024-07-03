@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: rgb(49, 49, 202);
     padding: 10px 20px;
 }
     .navbar-left {
@@ -28,8 +28,8 @@
     }
     .navbar-button2 {
         text-decoration: none;
-        background-color: rgba(151, 151, 24, 0.568);
-        color: white;
+        background-color: rgb(210, 210, 12);
+        color: black;
         border: none;
         padding: 10px 30px;
         margin: left;

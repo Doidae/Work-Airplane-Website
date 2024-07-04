@@ -5,38 +5,62 @@
     background-color: #526D82;
     padding: 10px 20px;
 }
-    .navbar-left {
-        display: flex;
-        align-items: center;
-    }
-    .navbar-logo {
-        height: 30px;
-        margin-right: 10px;
-    }
-    .navbar-title {
-        color: white;
-    }
-    .navbar-button {
-        text-decoration: none;
-        background-color: #555;
-        color: white;
-        border: none;
-        padding: 10px 10px;
-        margin: left;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-    .navbar-button2 {
-        text-decoration: none;
-        background-color: rgb(210, 210, 12);
-        color: black;
-        border: none;
-        padding: 10px 30px;
-        margin: left;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-left: 10px;
-    }
-    .navbar-hover {
-        background-color: #777;
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-title {
+    color: white;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-button, .navbar-button2 {
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-button {
+    background-color: #555;
+}
+
+.navbar-button2 {
+    background-color: rgb(210, 210, 12);
+    color: black;
+}
+
+.navbar-button:hover, .navbar-button2:hover {
+    background-color: #777;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: #9DB2BF;
+}
+
+.active {
+    background-color: #27374D;
 }

@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 100px;
+    gap: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.Left, .Right {
+    flex: 1; 
+    max-width: 100%; 
+}
+
+/* .Right{
+    border: 1px solid black
+} */

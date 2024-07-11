@@ -4,7 +4,32 @@
     /* align-items: center; */
 }
 .top-container {
-    background-color: #DDE6ED;
+    /* background-image: src; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 50px;
     text-align: center;
+}
+.about-title {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background to improve text readability */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.about-description {
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto; /* Center the element horizontally */
+    text-align: left;
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-description p {
+    margin: 0;
 }

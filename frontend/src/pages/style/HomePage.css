@@ -113,7 +113,7 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
     .intro-image-container {
         flex-direction: row;

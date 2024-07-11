@@ -1,7 +1,7 @@
 import React from 'react';
 import './style/Navbar.css';
 import { NavLink } from 'react-router-dom';
-import icon from './images/plane.png'
+import icon from './images/plane3.png'
 
 const Navbar = () => {
     return (

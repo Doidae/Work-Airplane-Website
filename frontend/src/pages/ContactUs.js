@@ -17,12 +17,6 @@ const ContactUs = () => {
                 <p>Monday - Friday: 9am - 5pm</p>
                 <p>Saturday: 10am - 4pm</p>
                 <p>Sunday: Closed</p>
-
-                <h3>Follow Us</h3>
-                <p>
-                    <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-                </p>
-                
                 <h3>Send Us a Message</h3>
                 <form className="contact-form">
                     <label>

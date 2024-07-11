@@ -52,11 +52,6 @@ const HomePage = () => {
                     <p>Our enhanced safety protocols to ensure a safe journey.</p>
                 </div>
             </div>
-
-            {/* <div className="footer-container">
-                <p>Contact us: (123) 456-7890 | email@example.com</p>
-                <p>Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
-            </div> */}
         </div>
     );
 };

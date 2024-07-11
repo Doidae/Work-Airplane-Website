@@ -54,6 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 }
 
 .contact-form label {
@@ -87,7 +88,7 @@ body {
 
 .contact-form button:hover {
     background-color: #223153;
-    margin: 20px;
+
 }
 
 .map-container {

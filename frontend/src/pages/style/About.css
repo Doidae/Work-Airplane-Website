@@ -8,8 +8,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 50px;
+    padding: 100px;
     text-align: center;
+    color: white;
 }
 .about-title {
     background-color: rgba(0, 0, 0, 0.5); 

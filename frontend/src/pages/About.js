@@ -1,7 +1,7 @@
 import React from 'react'
 import './style/About.css'
 // import { Link } from 'react-router-dom'
-import backgroundImage from './images/sky.jpg'
+import backgroundImage from './images/PlaneBackground.PNG'
 
 const About = () => {
     return(

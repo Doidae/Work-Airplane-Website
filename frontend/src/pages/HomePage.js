@@ -1,6 +1,7 @@
 import React from 'react';
 import './style/HomePage.css';
 import { Link } from 'react-router-dom';
+import homepageImage from './images/Plane.JPG'
 
 const HomePage = () => {
     return (
@@ -12,7 +13,7 @@ const HomePage = () => {
             <Link to='/contactus' className="cta-button" aria-label="Contact Us">Contact Us</Link>
 
             <div className="image-container">
-                <img src="https://via.placeholder.com/400" alt="Airplane flying in the sky" className="main-image" />
+                <img src={homepageImage} alt="Airplane flying in the sky" className="main-image" />
             </div>
 
             <div className="services-container">

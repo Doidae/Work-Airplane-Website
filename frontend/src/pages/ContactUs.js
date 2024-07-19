@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './style/ContactUs.css';
 
 const ContactUs = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+        .sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+            form.current, 
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+            () => {
+            console.log('SUCCESS!');
+            form.current.reset();
+            },
+            (error) => {
+            console.log('FAILED...', error.text);
+            },
+        );
+    };
+
+
     return(
         <div className='container'>
             <div className='left'>
@@ -18,22 +43,26 @@ const ContactUs = () => {
                 <p>Saturday: 10am - 4pm</p>
                 <p>Sunday: Closed</p>
                 <h3>Send Us a Message</h3>
-                <form className="contact-form">
+
+
+                <form ref={form} onSubmit={sendEmail} className="contact-form">
                     <label>
                         Name:
-                        <input type="text" name="name" required />
+                        <input type="text" name="user_name" required />
                     </label>
                     <label>
                         Email:
-                        <input type="email" name="email" required />
+                        <input type="email" name="user_email" required />
                     </label>
                     <label>
                         Message:
                         <textarea name="message" rows="4" required></textarea>
                     </label>
-                    <button type="submit">Submit</button>
+                    <input type="submit" value="Send" />
                 </form>
             </div>
+
+            
             <div className='map-container'>
                 <h3>Our Location</h3>
                 <iframe

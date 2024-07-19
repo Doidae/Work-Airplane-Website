@@ -18,14 +18,14 @@ const HomePage = () => {
 
             <div className="services-container">
                 <h2 className="section-title">Featured Services</h2>
-                <div className="service-item">
+                {/* <div className="service-item">
                     <h3>Private Charters</h3>
                     <p>Experience the luxury and convenience of private air travel.</p>
-                </div>
-                <div className="service-item">
+                </div> */}
+                {/* <div className="service-item">
                     <h3>Business Travel</h3>
                     <p>Efficient and comfortable travel for your business needs.</p>
-                </div>
+                </div> */}
                 <div className="service-item">
                     <h3>Aerial Tours</h3>
                     <p>Explore stunning landscapes from the sky.</p>

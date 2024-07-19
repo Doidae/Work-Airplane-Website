@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './style/ContactUs.css';
+import contatUsPicture from './images/contactusPicture.jpg'
+
 
 const ContactUs = () => {
     const form = useRef();
@@ -30,7 +32,7 @@ const ContactUs = () => {
     return(
         <div className='container'>
             <div className='left'>
-                <img src="https://via.placeholder.com/700" alt="Placeholder" />
+                <img src={contatUsPicture} alt="Picture of Larry and his plane" />
             </div>
             <div className='right'>
                 <h2>Contact Us!</h2>

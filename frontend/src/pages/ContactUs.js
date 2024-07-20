@@ -1,8 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './style/ContactUs.css';
-import contatUsPicture from './images/contactusPicture.jpg'
-
+import contactUsPicture from './images/contactusPicture.jpg';
 
 const ContactUs = () => {
     const form = useRef();
@@ -19,53 +18,55 @@ const ContactUs = () => {
         )
         .then(
             () => {
-            console.log('SUCCESS!');
-            form.current.reset();
+                console.log('SUCCESS!');
+                form.current.reset();
             },
             (error) => {
-            console.log('FAILED...', error.text);
+                console.log('FAILED...', error.text);
+                alert('Failed to send the message. Please try again later.');
             },
         );
     };
 
-
-    return(
-        <div className='container'>
-            <div className='left'>
-                <img src={contatUsPicture} alt="Picture of Larry and his plane" />
+    return (
+        <div className="container">
+            <div className="content-container">
+                <div className="left">
+                    <img src={contactUsPicture} alt="Picture of Larry and his plane" />
+                </div>
+                <div className="right">
+                    <h2>Contact Us!</h2>
+                    <p>Phone: 919-333-3333</p>
+                    <p>Email: exampleEmail@gmail.com</p>
+                    <p>Fax: Fax Number here</p>
+                    
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 9am - 5pm</p>
+                    <p>Saturday: 10am - 4pm</p>
+                    <p>Sunday: Closed</p>
+                </div>
             </div>
-            <div className='right'>
-                <h2>Contact Us!</h2>
-                <p>Phone: 919-333-3333</p>
-                <p>Email: exampleEmail@gmail.com</p>
-                <p>Fax: Fax Number here</p>
-                
-                <h3>Office Hours</h3>
-                <p>Monday - Friday: 9am - 5pm</p>
-                <p>Saturday: 10am - 4pm</p>
-                <p>Sunday: Closed</p>
+
+            <div className="form-container">
                 <h3>Send Us a Message</h3>
-
-
                 <form ref={form} onSubmit={sendEmail} className="contact-form">
                     <label>
                         Name:
-                        <input type="text" name="user_name" required />
+                        <input type="text" name="user_name" aria-label="Name" required />
                     </label>
                     <label>
                         Email:
-                        <input type="email" name="user_email" required />
+                        <input type="email" name="user_email" aria-label="Email" required />
                     </label>
                     <label>
                         Message:
-                        <textarea name="message" rows="4" required></textarea>
+                        <textarea name="message" rows="4" aria-label="Message" required></textarea>
                     </label>
-                    <input type="submit" value="Send" />
+                    <button type="submit">Send</button>
                 </form>
             </div>
-
             
-            <div className='map-container'>
+            <div className="map-container">
                 <h3>Our Location</h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.588909093802!2d-78.74643689944863!3d35.54037857818581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac85e10b9fc29b%3A0x89e4ccbe54a1b5b3!2s78NC%20Fuquay%2FAngier%20Field!5e0!3m2!1sen!2sus!4v1720482348122!5m2!1sen!2sus"

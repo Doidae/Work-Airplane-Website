@@ -1,9 +1,12 @@
+/* Base styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #526D82;
     padding: 10px 20px;
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .navbar-left {
@@ -23,6 +26,7 @@
 .navbar-right {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar-button, .navbar-button2 {
@@ -58,23 +62,29 @@
 
 .active {
     background-color: #27374D;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start; /* Align items to start for better mobile layout */
+        align-items: flex-start; 
+        padding: 10px; 
     }
 
     .navbar-right {
-        width: 100%; /* Ensure navbar-right spans full width */
+        width: 100%; 
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Align links to start for better mobile layout */
+        align-items: flex-start; 
     }
 
     .navbar-link {
-        width: 100%; /* Ensure each link spans full width */
-        margin: 5px 0; /* Add some margin for spacing */
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+        box-sizing: border-box; 
     }
 }
